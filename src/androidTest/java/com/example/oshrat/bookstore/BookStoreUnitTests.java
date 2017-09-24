@@ -29,7 +29,8 @@ public class BookStoreUnitTests {
         la = mActivityRule.getActivity();
 
     }
-
+//The test checks if an email address is invalid
+//(the email address that`s given is invalid in deliberately).
     @Test
     public void testInvalidEmail(){
         final TextView emailView = (TextView) la.findViewById(R.id.email);
@@ -46,6 +47,8 @@ public class BookStoreUnitTests {
         });
     }
 
+//The test checks if a password is invalid
+//(the password that`s given is invalid in deliberately -suppose to include at least 6 figure).
     @Test
     public void testInvalidPassword(){
         final TextView emailView = (TextView) la.findViewById(R.id.email);
